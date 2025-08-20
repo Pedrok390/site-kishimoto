@@ -1,0 +1,101 @@
+/* Estilo de marcação do menu */
+nav ul li:nth-child(4) a{
+    color: var(--red);
+    border-bottom:1px solid var(--red) ;
+}
+
+/* Ajuste do footer para situação da pagina */
+footer{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Box do conteudo da pagina */
+main{
+    margin: 208px 204px;
+}
+
+
+/* EStilo e estrutura dos itens do sobre o tranalho */
+.flex-column{
+    width: 30%;
+}
+
+button{
+    text-decoration: none;
+    border: 0;
+    background: transparent;
+    text-align: left;
+}
+
+.themes{
+    border-left: 3px solid var(--red);
+    padding: 11px 24px;
+    color: var(--red);
+}
+
+.collapsed{
+    border-left: 0;
+    color: #FCFBF0;
+}
+
+.card{
+    border: 0;
+    background: transparent;
+}
+.card-sobre{
+    width: 100%;
+}
+
+.card button{
+    color: white;
+    padding: 7px 20px;
+}
+
+.container-right{
+    width: 975px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 50vh;
+    scrollbar-color: var(--red) transparent;
+    
+}
+
+.titulo{
+    margin-bottom: 32px;
+}
+
+.container-right h1{
+    margin-bottom: 32px;
+}
+.container-right h2{
+    font-size: 25px;
+}
+
+.container-right h3{
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.container-right p{
+    margin-bottom: 32px;
+
+}
+
+#problematicas{
+    display: none;
+}
+
+#solucaos{
+    display: none;
+}
+
+#tecnologias{
+    display: none;
+}
+
+#destaques{
+    display: none;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Definiçõe do site -->
+        <title>Kishimoto - Sobre Trabalho</title>
+        <link rel="icon" type="image/png" href="/Assets/Icons/logo_icon.png">
+        <!-- Importe do script do bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="/Estrutura/Components/Global/estilos.css">
+        <link rel="stylesheet" href="/Estrutura/Sobre/sobre_trabalho.css">
+    </head>
+    <body>
+        <!-- Invocação do JS -->
+         <script src="/Estrutura/Components/components.js"></script>
+         <script src="/Estrutura/Sobre/controle_tabs.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- HTML do site -->
+        <header id="header"></header>
+        <main>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex flex-column" id="accordion">
+                    <button id="problematica-btn" class="themes collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1" onclick="scrollOnLink('problematicas')">Problemática</button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample1" data-bs-parent="#accordion">
+                        <div class="card card-body">
+                            <button onclick="scrollOnLink('problematica-1')">Apresentação do Setor</button>
+                            <button onclick="scrollOnLink('problematica-2')">Problema do setor</button>
+                            <button onclick="scrollOnLink('problematica-3')">Qual problema a ser tratado?</button>
+                        </div>
+                    </div>
+                    <button id="solucao-btn" class="themes collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" onclick="scrollOnLink('solucaos')">Solução Proposta</button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample2" data-bs-parent="#accordion">
+                        <div class="card card-body">
+                            <button onclick="scrollOnLink('solucao-1')">Qual a Proposta de Valor do Site</button>
+                        </div>
+                    </div>
+                    <button id="tecnologia-btn" class="themes collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3" onclick="scrollOnLink('tecnologias')">Tecnologias Utilizadas</button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample3" data-bs-parent="#accordion">
+                        <div class="card card-body">
+                            <button onclick="scrollOnLink('tecnologia-1')">Explicação Breve Sobre o uso de HTML E CSS e JavaScript</button>
+                        </div>
+                    </div>
+                    <button id="destaque-btn" class="themes collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4" onclick="scrollOnLink('destaques')">Política de destaques</button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample4" data-bs-parent="#accordion">
+                        <div class="card card-body">
+                            <button onclick="scrollOnLink('destaque-1')">Quais Funcionalidades em JavaScript Foram Incluídas?</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-right">
+                    <h1><b>Sobre</b> o Trabalho</h1>
+                    <div class="card-sobre" id="problematicas">
+                        <div class="titulo">
+                            <h2>Problemática</h2>
+                        </div>
+                        <div class="conteudo">
+                            <h2 id="problematica-1">Apresentação do setor</h2>
+                            <p>
+                                Tema: comércio local - Reúne pequenos negócios que movimentam a economia de comunidades, 
+                                oferecendo produtos e serviços diretamente à população. Esse setor valoriza a cultura 
+                                regional e proporciona atendimento mais próximo ao cliente, mas enfrenta desafios 
+                                para se adaptar ao ambiente digital diante da concorrência com grandes plataformas online.
+                            </p>
+
+                            <h2 id="problematica-2">Problema do setor</h2>
+                            <p>
+                                Pequenos restaurantes têm dificuldade em divulgar seus produtos e atender 
+                                pedidos online de forma eficiente. A dependência de aplicativos de delivery, que 
+                                cobram altas taxas, reduz o lucro e limita a autonomia desses comércios no contato 
+                                direto com seus clientes.
+                            </p>
+                            <h2 id="problematica-3">Qual o problema a ser tratado</h2>
+                            <p>
+                                A falta de uma presença digital própria impede que o restaurante Kishimoto alcançar mais clientes 
+                                e gerenciar pedidos online sem intermediários. Isso evidencia a necessidade de uma solução acessível 
+                                para divulgar o cardápio e facilitar as vendas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-sobre" id="solucaos">
+                        <div class="titulo">
+                            <h2>Solução Proposta</h2>
+                        </div>
+                        <div class="conteudo">
+                            <p>
+                                Desenvolver um site institucional para uma loja de culinária japonesa, com um design atrativo e 
+                                funcionalidade de vendas online. O site permitirá apresentar a história da empresa, divulgar o 
+                                cardápio completo e oferecer um carrinho de compras interativo para facilitar pedidos diretos, 
+                                aproximando o restaurante de seus clientes sem depender de plataformas terceirizadas.
+                            </p>
+
+                            <h2 id="solucao-1">Qual a Proposta de Valor do Site</h2>
+                            <p>
+                                O site oferece ao restaurante uma plataforma própria para expor seus produtos e atender pedidos 
+                                online, aumentando o alcance digital e proporcionando mais autonomia no relacionamento com os 
+                                clientes. Para o consumidor, garante uma experiência prática, visualmente agradável e direta ao 
+                                comprar seus pratos favoritos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-sobre" id="tecnologias">
+                        <div class="titulo">
+                            <h2>Tecnologias Utilizadas</h2>
+                        </div>
+                        <div class="conteudo">
+                            <p>
+                                Foram utilizados HTML, CSS e JavaScript para a construção do site, além do framework 
+                                Bootstrap e do Google Fonts para aprimorar o design e a tipografia.<br>
+                                Para o desenvolvimento e execução do projeto, foi utilizada a IDE Visual Studio Code, 
+                                com o plugin Live Server, necessário para rodar e testar o site localmente.
+                            </p>
+
+                            <h2 id="tecnologia-1">Explicação Breve Sobre o uso de HTML E CSS e JavaScript</h2>
+                            <p>
+                                O site foi desenvolvido com HTML, responsável pela estrutura e organização do conteúdo das páginas; CSS 
+                                para estilização e definição do layout, além do uso do Bootstrap como framework para facilitar a criação de 
+                                um design responsivo e moderno; e JavaScript, utilizado para adicionar interatividade, como o carrinho de 
+                                compras funcional. Para execução e testes, foi utilizado o Live Server no Visual Studio Code.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-sobre" id="destaques">
+                        <div class="titulo">
+                            <h2>Destaques Tecnicos</h2>
+                        </div>
+                        <div class="conteudo">
+                            <p>
+                                O projeto inclui o uso de componentes renderizados por JavaScript, um carrinho de compras funcional que calcula 
+                                automaticamente o total e permite adicionar ou remover itens, além de elementos interativos como botões e modais. 
+                                O site também conta com layout proprio com auxilio do Bootstrap, garantindo boa experiência de navegação.
+                            </p>
+
+                            <h2 id="destaque-1">Quais Funcionalidades em JavaScript Foram Incluídas?</h2>
+                            <p>
+                                Foram implementadas funcionalidades como:<br>
+                                - Carrinho de compras: permite adicionar, remover e visualizar produtos 
+                                com cálculo automático do valor total.<br>
+                                - Renderização dinâmica de componentes: os elementos da tela, como o 
+                                Header, Footer e o Carrinho são carregados e exibidos via JavaScript.<br>
+                                - Interações visuais: atualização em tempo real do carrinho conforme 
+                                o usuário interage e seu formato, em modal.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </body>
+</html>

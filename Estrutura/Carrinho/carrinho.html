@@ -1,0 +1,27 @@
+<!-- Importe do estilo e JS -->
+<link rel="stylesheet" type="text/css" href="/Estrutura/Carrinho/carrinho.css">
+
+<!-- Painel lateral (offcanvas) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDireita" aria-labelledby="tituloOffcanvas">
+    <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body">
+        <article id="vazio" style="display: none;">
+            <img src="/Assets/Imagens/Leque_Peixes.png" alt="Logo Kishimoto" >
+            <h3>Ops, seu carrinho está vazio!</h3>
+            <p>Descubra a harmonia dos sabores japoneses. Adicione seus pratos e finalize seu pedido.</p>
+            <a class="cardapio-button" href="/Estrutura/Cardapio/cardapio.html"><button>Ir para cardápio</button></a>
+        </article>
+        <article id="cheio" style="display: none;">
+            <section>
+                <h3>Itens adicionados</h3>
+                <div id="carrinhoLista" class="container-scrollbar"></div>
+                <div style="display: flex; justify-content: flex-end; margin-right: 16px; margin-top: 8px;">
+                    <div id="carrinhoTotal"></div>
+                </div>
+            </section>
+            <a class="cardapio-button" data-bs-dismiss="offcanvas" aria-label="Fechar"><button>Fechar pedido</button></a>
+        </article>
+    </div>
+</div>

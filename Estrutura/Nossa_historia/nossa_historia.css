@@ -1,0 +1,74 @@
+/* Estilo de marcação do menu */
+nav ul li:nth-child(2) a{
+    color: var(--red);
+    border-bottom:1px solid var(--red) ;
+}
+
+#historia{
+    border-bottom:1px solid white ;
+}
+
+.image-hist {
+    width: 100%;
+}
+
+.image-hist img{
+    width: 80%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 175px;
+    margin-bottom: 125px;
+}
+
+.info-box {
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.info-text{
+    width: 556px;
+}
+
+.info-box h2{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.caixa {
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.leque-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--red);
+    margin: 120px -228px;
+    padding: 64px 204px;
+}
+
+/* Botão para redirecionamento do cardapio */
+.cardapio-btn{
+    background-color: #1f1f1f;
+    margin-top: 28px;
+    padding: 16px 24px;
+    border: 0;
+    color: white;
+}

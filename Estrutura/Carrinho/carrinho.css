@@ -1,0 +1,88 @@
+/* Estilos da estrutara da modal */
+#offcanvasDireita{
+    width: 640px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 32px;
+    background-color: #FCFBF0;
+    color: black;
+}
+
+.offcanvas-body{
+    overflow: unset;
+}
+
+/* Estilos da modal para quando esta com o carrinho vazio e carinho com item */
+#vazio{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+#cheio{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Estilos da estrutura da lista do carrinho */
+#carrinhoLista{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container-scrollbar{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70vh;
+    scrollbar-color: var(--red) transparent;
+}
+
+/* Estilhos dos itens do carrinho */
+.card-carrinho button{
+    color: var(--red);
+}
+
+.cardapio-button{
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    background-color: var(--red);
+    color: white;
+}
+
+.cardapio-button button{
+    border: 0;
+    color: white;
+    background-color: transparent;
+}
+
+.card-carrinho{
+    border-radius: 16px 0 0 16px;
+    display: flex;
+}
+
+.card-carrinho h3{
+    font-size: 16px;
+}
+
+.main-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 16px 0 0 16px;
+}
+
+.price{
+    color: var(--red);
+}
+
+/* Estilho dos botãos da modal */
+button{
+    border: 0;
+    background-color: transparent;
+}

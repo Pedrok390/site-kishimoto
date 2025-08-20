@@ -1,0 +1,152 @@
+/* Estilo de marcação do menu */
+nav ul li:nth-child(1) a{
+    color: var(--red);
+    border-bottom:1px solid var(--red) ;
+}
+
+/* Box do texto e imagem destaque da home */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(/Assets/Imagens/Home/Backgroud_Home.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    padding: 308px 204px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Tamanho da box do texto */
+.overlay{
+    width: 943px;
+}
+
+/* Estilo do section de promoções */
+.card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    height: 504px;
+}
+
+/* Estilo dos boxers individuais de promoções */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-discount p{
+    color: var(--red);
+    padding: 4px 16px 4px 40px;
+    background-color: white;
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+
+.card-discount{
+    padding-top:32px ;
+}
+
+.card-text {
+    flex: 1;
+    padding-top: 200px;
+    padding-bottom: 112px;
+    margin-right: 20px;
+    color: white;
+}
+
+.card-text h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.card-text p {
+    margin: 5px 0;
+    color: white;
+    font-weight: 400;
+    width: 95%;
+}
+
+.card-text .price {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.card button {
+    background-color: var(--red);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card-image img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card a button{
+    padding: 16px 24px;
+    font-size: 16px;
+}
+
+/* Estilo e imagens das boxes de promoção */
+.promocoes {
+    padding: 20px;
+    width: 100%;
+    padding: 80px 204px;
+    background-color: #1F1F1F;
+}
+
+.promocoes h2 {
+    color: #f8f5f5;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.promocoes .card:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-image: url(/Assets/Imagens/Cardapio/Temaki.jpg) !important;
+}
+
+.promocoes .card:nth-child(2){
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-image: url(/Assets/Imagens/Cardapio/Makimono.jpg) !important;
+}
+
+.promocoes .card:nth-child(3){
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-image: url(/Assets/Imagens/Cardapio/Sushi.jpg) !important;
+}
+
+.promocoes .card:nth-child(4){ 
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-image: url(/Assets/Imagens/Cardapio/Yakisoba.png) !important;
+}
