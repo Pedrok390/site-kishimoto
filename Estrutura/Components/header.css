@@ -1,115 +1,110 @@
 /* Definição do estilo geral do Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 204px;
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 204px;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
 }
-.carrinho{
-    right: -640px;
+#carrinho{
+  position: absolute;
+}
+.carrinho {
+  right: -640px;
 }
 /* Estilo da imagem */
-.logo img {
-    width: 40%;
+.header__logo img {
+  width: 40%;
 }
 
 /* Box do menu de navegação da pagina */
-nav {
-    display: flex;
-    align-items: center;
-    position: relative;
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-
-nav ul li a:hover{
-    color:#f6dcdc
+.nav__links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 40px;
+  flex-grow: 1;
+  gap: 63px;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 40px;
-    flex-grow: 1;
-    gap: 63px;
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
 }
-
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: normal;
+.nav__link:hover {
+  color: #f6dcdc;
 }
 
 /* Box do carrinho e botão de entrar */
 .profile {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .profile img {
-    width: 22px;
-    margin-bottom: 17px;
-    margin-right: 10px;
+  width: 22px;
+  margin-bottom: 17px;
+  margin-right: 10px;
 }
 
-.profile a:nth-child(1){
-    margin-right: 32px;
+.profile a:nth-child(1) {
+  margin-right: 32px;
 }
-#cardapio-button{
-    border: 0;
-    background: transparent;
+#cardapio-button {
+  border: 0;
+  background: transparent;
 }
 .profile .login {
-    background-color: var(--red);
-    color: #fff;
-    border: none;
-    margin-bottom: 20px;
-    padding: 16px 56px;
-    cursor: pointer;
-    white-space: nowrap; 
-    display: inline-flex; 
-    align-items: center;
+  background-color: var(--red);
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+  padding: 16px 56px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Estilo para funcionamento do Tooltip */
 .tooltip-container {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip-container .tooltip-text {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 8px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 8px;
 
-    /* posição */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 40%;
-    transform: translateX(-50%);
+  /* posição */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 40%;
+  transform: translateX(-50%);
 
-    /* animação */
-    opacity: 0;
-    transition: opacity 0.3s;
+  /* animação */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tooltip-container:hover .tooltip-text {
-    font-size: 12px;
-    visibility: visible;
-    opacity: 1;
+  font-size: 12px;
+  visibility: visible;
+  opacity: 1;
 }

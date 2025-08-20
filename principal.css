@@ -6,29 +6,79 @@ nav ul li:nth-child(1) a{
 
 /* Box do texto e imagem destaque da home */
 .hero {
-    position: relative;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url(/Assets/Imagens/Home/Backgroud_Home.png);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    padding: 308px 204px;
-    color: white;
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(/Assets/Imagens/Home/Backgroud_Home.png);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  padding: 308px 204px;
+  color: white;
 }
 
-.hero h1 {
-    font-size: 64px;
-    margin: 0;
-    font-weight: 600;
+.hero__title {
+  font-size: 64px;
+  margin: 0;
+  font-weight: 600;
+  max-width: 943px;
+  line-height: 84px;
+  margin-bottom: 32px;
 }
-
+.hero__span-japanese{
+  display: block;
+  margin-bottom: 32px;
+}
+.hero__button{
+  padding: 16px 24px;
+  background-color: var(--red);
+  transition: 0.5s all;
+}
+.hero__button:hover{
+  background-color: white;
+}
+.hero__button:hover > .hero__link{
+  color: var(--red);
+}
+.hero__link{
+  text-decoration: none;
+  color: white;
+  transition: 0.5s all;
+}
+.hero__line{
+  position: absolute;
+  left: 0;
+  bottom: 48px;
+  border: 2px solid white;
+  opacity: 1;
+}
+.hero__image{
+  position: absolute;
+  top: 99px;
+  right: 0;
+}
 /* Tamanho da box do texto */
 .overlay{
     width: 943px;
 }
 
 /* Estilo do section de promoções */
+.promocoes__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+.promocoes__line{
+  border: 2px solid var(--red);
+  opacity: 1;
+  margin: 1px 0 1px 65px;
+  width: 100%;
+  max-width: 1173px;
+}
+.promocoes__card-container{
+  display: flex;
+  justify-content: space-between;
+}
 .card {
     position: relative;
     display: flex;
@@ -36,7 +86,7 @@ nav ul li:nth-child(1) a{
     align-items: center;
     margin-bottom: 20px;
     padding: 20px;
-    width: 50%;
+    width: 360px;
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -44,14 +94,10 @@ nav ul li:nth-child(1) a{
 }
 
 /* Estilo dos boxers individuais de promoções */
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.card__discount{
+    padding-top:32px ;
 }
-
-.card-discount p{
+.card__discount p{
     color: var(--red);
     padding: 4px 16px 4px 40px;
     background-color: white;
@@ -60,11 +106,7 @@ nav ul li:nth-child(1) a{
     left: 0;
 }
 
-.card-discount{
-    padding-top:32px ;
-}
-
-.card-text {
+.card__text {
     flex: 1;
     padding-top: 200px;
     padding-bottom: 112px;
@@ -145,7 +187,7 @@ nav ul li:nth-child(1) a{
     background-image: url(/Assets/Imagens/Cardapio/Sushi.jpg) !important;
 }
 
-.promocoes .card:nth-child(4){ 
+.promocoes .card:nth-child(4){
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     background-image: url(/Assets/Imagens/Cardapio/Yakisoba.png) !important;
